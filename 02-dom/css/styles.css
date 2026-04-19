@@ -157,3 +157,19 @@ h2 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     background-color: rgb(183, 40, 40); 
 }
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+:focus {
+    outline: 2px solid rgb(244, 118, 198);
+    outline-offset: 2px;
+}

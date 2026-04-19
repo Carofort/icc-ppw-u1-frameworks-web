@@ -221,4 +221,4 @@ h2 {
 #### 1- Vista general de la aplicación:
 ![Captura de la vista general](assets/01-vista-general.png)
 #### 2- Filtrado aplicado:
-![Captura de la vista general](assets/02-filtrado.png)
+![Captura del filtrado aplicado](assets/02-filtrado.png)
