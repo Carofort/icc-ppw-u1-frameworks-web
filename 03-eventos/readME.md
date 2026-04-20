@@ -1,7 +1,7 @@
 ## PRÁCTICA 3
-
+#### Carolina Fortmann
 ### Código destacado:
-#### - Validación de formulario con ```js preventDefault()```
+#### - Validación de formulario con ```preventDefault()```
 ```js
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();

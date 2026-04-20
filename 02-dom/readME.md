@@ -1,5 +1,5 @@
 ## PRÁCTICA 2
-
+#### Carolina Fortmann
 #### Código de CSS:
 ```css
 body {
