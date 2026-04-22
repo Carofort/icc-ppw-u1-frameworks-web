@@ -63,29 +63,38 @@ Se encuentra en la función ```iniciar()``` del temporizador. Este método permi
 
 #### 2- Carga secuencial:
 ![Captura de la ejecución de la carga secuencial](assets/02-carga-secuencial.png)
+
 *Al hacer Click en Cargar Secuencial muestra en el log cómo funciona; envía las peticiones una por una. Hay que poner atención en los segundos.*
 #### 3- Carga paralela:
 ![Captura de la ejecución de la carga paralela](assets/03-carga-paralela.png)
+
 *Al hacer Click en Cargar Paralelo muestra en el log cómo todas las peticiones fueron enviadas al mismo tiempo. La diferencia es mínima.*
 #### 4- Comparativa de tiempos:
 ![Captura de la comparativa entre ambas cargas](assets/04-comparativa.png)
+
 *Cuando se ejecutan ambos botones, aparece un pequeño contenedor en la parte inferior del log. Este contenedor muestra la comparación de ambas funciones.*
 #### 5- Temporizador funcionando:
 ![Captura del temporizador en uso](assets/05-temporizador.png)
+
 *Primero se ingresó los segundos de la cuenta regresiva, la captura muestra cómo la barra funciona correctamente.*
 #### 6- Manejo de errores:
 ![Captura del error simulado](assets/06-error.png)
+
 *Al hacer Click se muestra en el log un mensaje con el error capturado.*
 
 ![Captura de los reintentos automáticos](assets/06-reintentos.png)
+
 *Al hacer Click en reintentos automáticos este hace que el sistema intente recuperar una operación fallida sin que el usuario tenga que intervenir manualmente.*
 #### 7- Consola limpia:
 ![Captura de la consola sin errores](assets/07-consola.png)
+
 *Al hacer F12, se abre la ventana de DevTools donde se puede comprobar que no aparece ningún error.*
 #### 8- Código fuente:
 ![Captura del código donde se implementó async-await](assets/08-async-await.png)
+
 *Código de ejemplo donde se implementó ```async/await```*
 ![Captura del código donde se implementó Promise.all](assets/08-promiseAll.png)
+
 *Código de ejemplo donde se implementó el método de ```Promise.all()```*
 
 ### Análisis de la diferencia de tiempo entre carga Secuencial y Paralela:
