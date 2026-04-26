@@ -1,0 +1,105 @@
+:root {
+    --bg-primary: #f4f7f6;
+    --text-primary: #333;
+    --color-valid: #2ecc71;
+    --color-error: rgb(215, 36, 36);
+    --color-primary: rgb(244, 118, 198);
+    --card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(140deg, rgb(242, 201, 227) 0%,  rgb(223, 96, 176) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+input, select {
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Clases de validación */
+input.is-valid, select.is-valid { border-color: var(--color-valid); }
+input.is-invalid, select.is-invalid { border-color: var(--color-error); }
+
+.error-msg {
+    color: var(--color-error);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    min-height: 1rem;
+}
+
+/* Fuerza de contraseña */
+.strength-meter {
+    height: 5px;
+    background: #ddd;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+.strength--low { background: rgb(215, 36, 36); width: 33%; }
+.strength--medium { background: orange; width: 66%; }
+.strength--high { background: green; width: 100%; }
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Botón cuando está deshabilitado */
+.btn--primary:disabled {
+    background-color: #adb5bd; /* Gris */
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+    opacity: 0.7;
+}
+
+.btn--primary:not(:disabled) {
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.btn--primary:hover:not(:disabled) {
+    background: rgb(223, 96, 176);
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.oculto { display: none; }
+.alert {
+    padding: 1rem;
+    background: #d4edda;
+    color: #155724;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
