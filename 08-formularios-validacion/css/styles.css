@@ -75,9 +75,8 @@ input.is-invalid, select.is-invalid { border-color: var(--color-error); }
     font-size: 1rem;
 }
 
-/* Botón cuando está deshabilitado */
 .btn--primary:disabled {
-    background-color: #adb5bd; /* Gris */
+    background-color: #adb5bd;
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
